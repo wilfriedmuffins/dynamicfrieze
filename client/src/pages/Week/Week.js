@@ -1,5 +1,5 @@
 import React from "react";
 
-export default function Frise() {
+export default function Week() {
   return <div>Frise</div>;
 }
