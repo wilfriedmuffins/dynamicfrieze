@@ -1,5 +1,5 @@
 import React from "react";
 
 export default function Frieze() {
-  return <div>FriseTest</div>;
+  return <h1>Dynamic Frieze</h1>;
 }
