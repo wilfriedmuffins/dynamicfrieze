@@ -5,3 +5,11 @@
     flex-direction: column;
     height: 100vh;
   }
+
+
+.frieze {
+  height: 100px;
+  width: 80%;
+  border: solid black 1px;
+  display: flex;
+  } 
