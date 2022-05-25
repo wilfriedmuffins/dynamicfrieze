@@ -1,15 +1,29 @@
-.pageFrieze {
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
-  }
-
 
 .frieze {
-  height: 100px;
-  width: 80%;
-  border: solid black 1px;
   display: flex;
-  } 
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 80vh;
+  transform: rotateY(0deg) rotate(-20deg);
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fleche {
+  width: 0px;
+  height: 0px;
+  border-top: 150px solid transparent;
+  border-bottom: 150px solid transparent;
+  border-left: 200px solid red;
+  border-right: 50px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+

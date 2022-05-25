@@ -1,10 +1,11 @@
 .weekInFrieze {
-    height: 100%;
-    width: 20%;
-    background-color: red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: solid black 1px;
-    cursor: pointer;
-} 
+  padding: 50px;
+  margin: 20px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid black 1px;
+  cursor: pointer;
+}
+

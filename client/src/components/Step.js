@@ -3,8 +3,8 @@ import "../style/week.css";
 import CheckBox from "../style/SVG/CheckBox";
 import CheckBoxFill from "../style/SVG/CheckBoxFill";
 
-function Step({ text }) {
-  const [check, setCheck] = useState(false);
+function Step({ step }) {
+  const [check, setCheck] = useState(step.completed);
 
   let bgStep = "";
   let colorStep = "";
@@ -12,7 +12,7 @@ function Step({ text }) {
   check ? (colorStep = "white") : (colorStep = "black");
   return (
     <div className="step" style={{ backgroundColor: bgStep, color: colorStep }}>
-      <h3>{text}</h3>
+      <h3>{step.title}</h3>
       {!check ? (
         <CheckBox className="checkBox" onClick={() => setCheck(true)} />
       ) : (
@@ -21,6 +21,7 @@ function Step({ text }) {
           onClick={() => setCheck(false)}
         />
       )}
+
     </div>
   );
 }

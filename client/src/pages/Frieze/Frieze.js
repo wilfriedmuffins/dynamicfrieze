@@ -42,6 +42,7 @@ function App() {
         {weeks.map((week, index) => (
           <WeekInFrieze key={index} week={week} setWeeks={setWeeks} />
         ))}
+        <div className="fleche"></div>
       </div>
     </div>
   );
