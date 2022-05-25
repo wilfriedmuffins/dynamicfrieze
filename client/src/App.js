@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import WeekInFrieze from "./components/WeekInFrieze/WeekInFrieze";
+import Router from "./Router";
 
 function App() {
   const [weeks, setWeeks] = useState([
@@ -37,6 +38,7 @@ function App() {
           <WeekInFrieze week={week} setWeeks={setWeeks} />
         ))}
       </div>
+      <Router />
     </div>
   );
 }

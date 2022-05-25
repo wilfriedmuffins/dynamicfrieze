@@ -1,0 +1,11 @@
+.week {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.step {
+  display: flex;
+  flex-direction: row;
+}
