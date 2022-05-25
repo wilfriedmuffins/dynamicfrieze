@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Step from "../../components/Step";
 import "../../style/week.css";
 import { useParams } from "react-router-dom";
+import Home from "../../style/SVG/Home";
 
 export default function Week(props) {
   const { weekId } = useParams();
@@ -68,7 +69,9 @@ export default function Week(props) {
 
   return (
     <div className="week">
-      <Link to="/">Home</Link>
+      <Link to="/">
+        <Home className="homeSvg" />
+      </Link>
       <h1>{week.name}</h1>
       {week.steps.map((step) => (
         <Step setWeeks={setWeeks} step={step} />

@@ -36,7 +36,7 @@ function App() {
     },
   ]);
   return (
-    <div className="App">
+    <div className="pageFrieze">
       <h1>Dynamic Frieze</h1>
       <div className="frieze">
         {weeks.map((week, index) => (
