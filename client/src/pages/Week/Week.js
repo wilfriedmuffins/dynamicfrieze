@@ -11,32 +11,51 @@ export default function Week(props) {
     {
       name: "Semaine 1",
       id: 1,
-      steps: ["La voie du codeur 2.0", "Prendre un bon départ", "TEEEEST"],
+      steps: [
+        { title: "La voie du codeur 2.0", completed: false },
+        { title: "La voie du codeur 2.0", completed: false },
+        { title: "La voie du codeur 2.0", completed: false },
+      ],
     },
     {
       name: "Semaine 2",
       id: 2,
-      steps: ["La voie du codeur 2.0", "Prendre un bon départ"],
+      steps: [
+        { title: "La voie du codeur 2.0", completed: false },
+        { title: "La voie du codeur 2.0", completed: false },
+      ],
     },
     {
       name: "Semaine 3",
       id: 3,
-      steps: ["La voie du codeur 2.0", "Prendre un bon départ"],
+      steps: [
+        { title: "La voie du codeur 2.0", completed: false },
+        { title: "La voie du codeur 2.0", completed: false },
+      ],
     },
     {
       name: "Semaine 4",
       id: 4,
-      steps: ["La voie du codeur 2.0", "Prendre un bon départ"],
+      steps: [
+        { title: "La voie du codeur 2.0", completed: false },
+        { title: "La voie du codeur 2.0", completed: false },
+      ],
     },
     {
       name: "Semaine 5",
       id: 5,
-      steps: ["La voie du codeur 2.0", "Prendre un bon départ"],
+      steps: [
+        { title: "La voie du codeur 2.0", completed: false },
+        { title: "La voie du codeur 2.0", completed: false },
+      ],
     },
     {
       name: "Semaine 6",
       id: 6,
-      steps: ["La voie du codeur 2.0", "Prendre un bon départ"],
+      steps: [
+        { title: "La voie du codeur 2.0", completed: false },
+        { title: "La voie du codeur 2.0", completed: false },
+      ],
     },
   ]);
 
@@ -51,8 +70,8 @@ export default function Week(props) {
     <div className="week">
       <Link to="/">Home</Link>
       <h1>{week.name}</h1>
-      {week.steps.map((text) => (
-        <Step text={text} />
+      {week.steps.map((step) => (
+        <Step setWeeks={setWeeks} step={step} />
       ))}
     </div>
   );
